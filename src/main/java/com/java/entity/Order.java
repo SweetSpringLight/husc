@@ -50,6 +50,6 @@ public class Order implements Serializable {
 	private Customer customer;
 
 	@OneToMany(mappedBy = "order")
-	private Collection<OrderDetail> orderDetails;
+	private Collection<OrderDetail> orderdetails;
 
 }

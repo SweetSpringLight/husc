@@ -3,6 +3,7 @@ package com.java.service;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 //import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 //import org.springframework.security.core.Authentication;
 //import org.springframework.security.core.context.SecurityContextHolder;
@@ -24,6 +25,7 @@ public class VeganaService implements UserDetailsService {
 	CustomersRepository customersRepository;
 
 	@Autowired
+	@Lazy
 	BCryptPasswordEncoder passwordEncoder;
 
 	@Override
